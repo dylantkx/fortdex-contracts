@@ -14,15 +14,15 @@ describe('FortToken', function () {
     [owner, acc1, acc2, acc3] = await ethers.getSigners();
   });
   describe('Normal test', () => {
-    it('Should appeare right name', async function () {
+    it('Should appear right name', async function () {
       expect(await fortToken.name()).to.equal('FortToken');
     });
 
-    it('Should appeare right symbol', async function () {
+    it('Should appear right symbol', async function () {
       expect(await fortToken.symbol()).to.equal('FORT');
     });
 
-    it('Should appeare right decimal', async function () {
+    it('Should appear right decimal', async function () {
       expect(await fortToken.decimals()).to.equal(18);
     });
 
